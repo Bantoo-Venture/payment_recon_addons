@@ -51,7 +51,8 @@ party_type: function() {
 - Make Bank Field Mandatory
 
 #### Down the pipeline
-- Add to core
+- Add Check field to activate the filter. Exclude to only Suppliers and Customers
+- Push to core
 - Pull defaults
   - Company onload
   - Payable / Receivable Account on selection of Party Type
