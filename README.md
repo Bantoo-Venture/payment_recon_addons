@@ -17,12 +17,12 @@ Enhancements to ERPNexts Payment Reconciliation Feature
 
 ```bench --site <site_name> install-app payment_recon_addons```
 
-- Add the javascript to your Payment Reconciliation
+- Add the javascript to the default Payment Reconciliation JS file in ERPNext. 
+
+Add the code below this to 
+`erpnext/erpnext/accounts/doctype/payment_reconciliation/payment_reconciliation.js` before `party: function() {`
 
 ```
-// add this to 
-// erpnext/erpnext/accounts/doctype/payment_reconciliation/payment_reconciliation.js
-// before party: function() {
 
 party_type: function() {
 		var me = this;
